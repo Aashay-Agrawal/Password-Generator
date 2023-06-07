@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+      rel="stylesheet"
+    />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Password Generator</h1>
+
+      <div class="form-group">
+        <label for="password-length">Password Length</label>
+        <input type="range" id="password-length" min="8" max="16" value="8" />
+        <output for="password-length" id="password-length-value">8</output>
+      </div>
+
+      <div class="form-group">
+        <label>Character Types</label>
+        <label
+          ><input type="checkbox" class="character-type" value="uppercase" />
+          Uppercase Letters</label
+        >
+        <label
+          ><input type="checkbox" class="character-type" value="lowercase" />
+          Lowercase Letters</label
+        >
+        <label
+          ><input type="checkbox" class="character-type" value="numbers" />
+          Numbers</label
+        >
+        <label
+          ><input type="checkbox" class="character-type" value="special" />
+          Special Characters</label
+        >
+      </div>
+
+      <div class="button-container">
+        <button id="generate-password">Generate Password</button>
+      </div>
+
+      <div class="generated-password" id="generated-password"></div>
+    </div>
+  </body>
+</html>
